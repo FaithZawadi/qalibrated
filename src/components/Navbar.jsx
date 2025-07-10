@@ -29,7 +29,7 @@ function Navbar() {
       {/* Main Nav */}
       <nav className="bg-white shadow py-4 px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="QSL Logo" className="h-20 w-auto" />
+          <img src={logo} alt="QSL Logo" className="h-10 w-auto" />
         </Link>
         <div className="hidden md:flex gap-6 items-center font-medium text-black">
           <Link to="/" className="hover:text-amber-400">Home</Link>
