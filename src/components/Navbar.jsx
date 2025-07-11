@@ -7,7 +7,7 @@ import {
   LogIn,
   LayoutDashboard
 } from 'lucide-react';
-import logo from '../assets/logoblack.svg';
+import logo from '../assets/LOGO-COLORED.svg';
 
 function Navbar() {
   return (

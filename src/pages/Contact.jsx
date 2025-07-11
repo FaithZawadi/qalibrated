@@ -7,7 +7,9 @@ import {
 // Assuming your Navbar and Footer components are in src/components/
 import Navbar from '../components/Navbar'; 
 import Footer from '../components/Footer';
-import Image from '../assets/hero.jpg'; // Assuming you have a Footer.jsx component
+import Image from '../assets/hero.jpg'; 
+import placer from '../assets/logoblack.svg';
+import placer1 from '../assets/portfolio-6.jpg';// Assuming you have a Footer.jsx component
 
 const Contact = () => {
   return (
@@ -39,7 +41,7 @@ const Contact = () => {
       <section className="container mx-auto px-4 my-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Contact Info */}
-          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 h-full"> {/* h-full to make cards equal height */}
+          <div className="bg-gray-50 p-8 rounded-lg shadow-md border border-gray-200 h-full"> {/* h-full to make cards equal height */}
             <h2 className="text-amber-500 text-lg font-semibold mb-6">Get In Touch</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div className="flex flex-col items-center text-center">
@@ -59,14 +61,31 @@ const Contact = () => {
               </div>
               <div className="flex flex-col items-center text-center">
                 <Link className="h-12 w-12 text-amber-500 mb-3" />
-                <h4 className="font-bold text-xl mb-1">Yoursite</h4>
+                <h4 className="font-bold text-xl mb-1">Website</h4>
                 <p className="text-gray-600 text-sm">https://qalibrated.co.ke/</p>
               </div>
+              <div>
+                <img
+                      src={placer}
+                      alt={`Advisor`}
+                      className="rounded-lg h-full"
+                                
+                />
+              </div>
+              <div>
+                <img
+                      src={placer1}
+                      alt={`Advisor`}
+                      className="rounded-lg fade-"
+                                
+                />
+              </div>
+              
             </div>
           </div>
 
           {/* Right Column - Send Your Message Form */}
-          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 h-full"> {/* h-full to make cards equal height */}
+          <div className="bg-gray-50 p-8 rounded-lg shadow-md border border-gray-200 h-full"> {/* h-full to make cards equal height */}
             <h2 className="text-amber-500 text-lg font-semibold mb-2">Send Your Message</h2>
             <p className="text-gray-600 text-sm mb-6">
               Talk to us 
@@ -130,7 +149,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-200 w-full"
+                className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-200 w-auto"
               >
                 Send Message
               </button>
@@ -140,7 +159,7 @@ const Contact = () => {
 
         {/* Map Placeholder - Now below both columns, full width */}
         <div className="mt-12"> {/* Added margin-top for spacing */}
-          <div className="bg-gray-200 rounded-lg shadow-md overflow-hidden" style={{ height: '400px' }}> {/* Adjusted height for full width map */}
+          <div className="bg-gray-200 rounded-lg shadow-md overflow-hidden" style={{ height: '300px' }}> {/* Adjusted height for full width map */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.814316886494!2d36.81722341475395!3d-1.2863890999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
               width="100%"
