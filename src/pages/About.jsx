@@ -4,10 +4,11 @@ import {
   Scale, Building, Car, Settings, Factory, FlaskConical
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 // Placeholder images (replace with your own imported assets as needed)
 import about1 from '../assets/about.jpg';
-import HeroAbout from '../assets/weighingbridge1.jpg';
+import HeroAbout from '../assets/gps-system-smart-car.jpg';
 
 const About = () => {
   return (
@@ -166,9 +167,7 @@ const About = () => {
       </style>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-6 text-center rounded-t-lg shadow-inner">
-        <p className="text-gray-400 text-sm">&copy; 2025 Qalibrated Systems Ltd. All rights reserved.</p>
-      </footer>
+      <Footer/>
     </div>
   );
 };

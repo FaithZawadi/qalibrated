@@ -35,7 +35,8 @@ function Navbar() {
           <Link to="/" className="hover:text-amber-400">Home</Link>
           <Link to="/about" className="hover:text-amber-400">About</Link>
           <Link to="/services" className="hover:text-amber-400">Services</Link>
-          <Link to="/blogs" className="hover:text-amber-400">Blogs</Link>
+          <Link to="/catalogue" className="hover:text-amber-400">Catalogue</Link>
+          {/* <Link to="/blogs" className="hover:text-amber-400">Blogs</Link> */}
           <Link to="/contact" className="hover:text-amber-400">Contact Us</Link>
           <button className="ml-4 px-4 py-2 bg-amber-400 text-black rounded-full hover:opacity-90 transition">
             Get Started

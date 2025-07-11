@@ -5,7 +5,7 @@ import AboutSnapshot from '../components/AboutSnapshot';
 import ServicesGrid from '../components/ServicesGrid';
 import StatsCounter from '../components/StatsCounter';
 import FAQAccordion from '../components/FAQAccordion';
-
+import Footer from '../components/Footer';
 function Home() {
   return (
     <>
@@ -34,6 +34,9 @@ function Home() {
       {/* FAQs Section */}
       <section id="faq">
         <FAQAccordion />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </>
   );

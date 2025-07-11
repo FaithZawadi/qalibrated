@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import about1 from '../assets/gps-system-smart-car.jpg';
 import Hero from '../assets/portrait-engineers-work-hours-job-site.jpg';
+import Footer from '../components/Footer';
 
 // Assuming your Navbar component is in src/components/Navbar.jsx or src/components/Navbar.js
 import Navbar from '../components/Navbar'; 
@@ -202,9 +203,7 @@ const Service = () => {
       </button>
 
       {/* Footer Section */}
-      <footer className="bg-gray-800 text-white py-8 text-center">
-        <p className="text-gray-400 text-sm">&copy; 2025 Qalibrated Systems Ltd. All rights reserved.</p>
-      </footer>
+      <Footer/>
     </div>
   );
 }
